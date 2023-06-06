@@ -195,8 +195,8 @@ class Lista:
         cursor = self.__head
         while cursor.prox != None:
             ant = cursor
-            carga = cursor
             cursor = cursor.prox
+            carga = cursor.carga
         ant.prox = None
         self.__tamanho -= 1
         return carga
@@ -247,10 +247,10 @@ class Lista:
 
 if __name__ == "__main__": 
     l = Lista()
-    # l.inserir(1,"raiza")
-    # l.inserir(2,"claudia")
-    # l.inserir(3,"lucas")
-    # l.inserir(2,"fabricio")
+    l.inserir(1,"raiza")
+    l.inserir(2,"claudia")
+    l.inserir(3,"lucas")
+    l.inserir(2,"fabricio")
     # print(l.busca("claudia"))
     # print(l.elemento(2))
     # l.remover(1)
@@ -279,3 +279,4 @@ if __name__ == "__main__":
     # # print(l.busca("A"))
     # l.removeOcorrencias("A")
     print(l)
+    print(l.removeFim())
