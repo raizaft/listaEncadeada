@@ -251,6 +251,7 @@ if __name__ == "__main__":
     l.inserir(2,"claudia")
     l.inserir(3,"lucas")
     l.inserir(2,"fabricio")
+    l.insereFim("A")
     # print(l.busca("claudia"))
     # print(l.elemento(2))
     # l.remover(1)
@@ -280,3 +281,4 @@ if __name__ == "__main__":
     # l.removeOcorrencias("A")
     print(l)
     print(l.removeFim())
+    print(l)
